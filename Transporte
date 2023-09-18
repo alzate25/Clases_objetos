@@ -1,0 +1,75 @@
+package Clases_Objetos;
+
+public class Trans_publico {
+    String color;
+    String carac_1;
+    String carac_2;
+    String carac_3;
+    double tamaño;
+    
+    public static void main (String [] args){
+        
+        //Transmilenio
+        Trans_publico transmilenio = new Trans_publico();
+        
+        transmilenio.color="Rojo";
+        transmilenio.tamaño=27;
+        transmilenio.carac_1="Rapido";
+        transmilenio.carac_2="Peligroso";
+        transmilenio.carac_3="Lleno";
+        System.out.println("(1) Transmilenio:\n\n"+"Color:\t"+transmilenio.color+"\n"+"Tamaño(m):\t"+transmilenio.tamaño+"\n"+transmilenio.carac_1+"\n"+transmilenio.carac_2+"\n"+transmilenio.carac_3+"\n");
+        
+        //Taxi
+        Trans_publico taxi=new Trans_publico();
+        
+        taxi.color="Amarillo";
+        taxi.tamaño=3.7;
+        taxi.carac_1="Algunas veces mas rapido";
+        taxi.carac_2="Comodo";
+        taxi.carac_3="Costoso";
+        System.out.println("(2) Taxi:\n\n"+"Color:\t"+taxi.color+"\n"+"Tamaño(m):\t"+taxi.tamaño+"\n"+taxi.carac_1+"\n"+taxi.carac_2+"\n"+taxi.carac_3+"\n");
+                
+        //Uber
+        Trans_publico uber=new Trans_publico();
+        
+        uber.color="Gris";
+        uber.carac_1="Algunas veces rapido";
+        uber.carac_2="Comodo";
+        uber.carac_3="Accesible";
+        System.out.println("(3) Uber:\n\n"+"Color:\t"+uber.color+"\n"+"Tamaño(m):\t"+uber.tamaño+"\n"+uber.carac_1+"\n"+uber.carac_2+"\n"+uber.carac_3+"\n");
+                
+        //SITP
+        Trans_publico SITP=new Trans_publico();
+        
+        SITP.color="Azul, verde y amarillo";
+        SITP.tamaño=10.6;
+        SITP.carac_1="Algunas veces mas rapido";
+        SITP.carac_2="Lleno en hora pico";
+        System.out.println("(4) SITP:\n\n"+"Color:\t"+SITP.color+"\n"+"Tamaño(m):\t"+SITP.tamaño+"\n"+SITP.carac_1+"\n"+SITP.carac_2+"\n");
+        
+        //Moto
+        Trans_publico moto=new Trans_publico();
+        
+        moto.color="Negro";
+        moto.tamaño=1.95;
+        moto.carac_1="Rapido";
+        moto.carac_2="Peligroso";
+        moto.carac_3="Comodo para una o dos personas";
+        System.out.println("(5) Moto:\n\n"+"Color:\t"+moto.color+"\n"+"Tamaño(m):\t"+moto.tamaño+"\n"+moto.carac_1+"\n"+moto.carac_2+"\n"+moto.carac_3+"\n");
+        
+        //Metro Cable
+        Trans_publico metrocbl=new Trans_publico();
+        
+        metrocbl.color="Rojo";
+        metrocbl.tamaño=2.8;
+        metrocbl.carac_1="Rapido";
+        metrocbl.carac_2="Comodo";
+        metrocbl.carac_3="Barato";
+        System.out.println("(6) Metro cable:\n\n"+"Color:\t"+metrocbl.color+"\n"+"Tamaño(m):\t"+metrocbl.tamaño+"\n"+metrocbl.carac_1+"\n"+metrocbl.carac_2+"\n"+metrocbl.carac_3+"\n");      
+        
+        
+        
+        
+    }            
+    
+}
