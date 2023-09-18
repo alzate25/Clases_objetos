@@ -1,0 +1,37 @@
+
+package Clases_Objetos;
+
+public class Coche {
+    String color;
+    String marca;
+    String caracteristica;
+    String potencia;
+    int km;
+    
+    public static void main (String[] args){
+        
+        //Audi
+        Coche coche1=new Coche();
+        coche1.color="Blanco";
+        coche1.marca="Audi";
+        coche1.km = 0;
+        System.out.println("Coche 1:\n\n"+"Color:\t"+coche1.color+"\n"+"Marca:\t"+coche1.marca+"\n"+"Km:"+coche1.km+"\n\n");
+        
+        //Ferrari
+        Coche coche2=new Coche();
+        coche2.color="Rojo";
+        coche2.marca="Ferrari";
+        coche2.km = 100;
+        coche2.caracteristica="Edicion especial";
+        System.out.println("Coche 2:\n\n"+"Color:\t"+coche2.color+"\n"+"Marca:\t"+coche2.marca+"\n"+"Km:"+coche2.km+"\n"+"Caracteristica:"+coche2.caracteristica+"\n\n");
+        
+        //Mustang
+        Coche coche3=new Coche();
+        coche3.color="Negro";
+        coche3.marca="Ford";
+        coche3.km = 0;
+        coche3.potencia="457 HP";
+        System.out.println("Coche 3:\n\n"+"Color:\t"+coche3.color+"\n"+"Marca:\t"+coche3.marca+"\n"+"Km:"+coche3.km+"\n"+"Potencia:"+coche3.potencia+"\n\n");
+    }
+
+}
