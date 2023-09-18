@@ -1,59 +1,23 @@
-
 package Clases_Objetos;
 
-public class Fabrica_galletas {
+public class Animal_salvaje {
+    
     String color;
-    String glaseado;
-    String sabor;
-    String carc_1;
-    String carc_2;
+    String escamas;
+    String lengua;
+    String patas;
+    double tamaño;
+    int peso;
     
-    public static void main (String []args){
+    public static void main(String[] args){
         
-    System.out.println("FABRICA DE GALLETAS\n");
-    
-        //Galletas de vainilla 
-        Fabrica_galletas vanila=new Fabrica_galletas();
-        
-        vanila.color="Crema";
-        vanila.glaseado="Vainilla";
-        vanila.sabor="Vainilla";
-        vanila.carc_1="Dulce";
-        vanila.carc_2="Pequeña";
-        System.out.println("Galleta vainilla:\n\n"+"Color:\t"+vanila.color+"\n"+"Glaseado:\t"+vanila.glaseado+"\n"+"Sabor:\t"+vanila.sabor+"\n"+vanila.carc_1+"\n"+vanila.carc_2);
-        
-        //Galletas de chocolate
-        Fabrica_galletas chocolate = new Fabrica_galletas();
-        
-        chocolate.color="Cafe oscuro";
-        chocolate.glaseado="Vainilla";
-        chocolate.sabor="Chocolate";
-        chocolate.carc_1="Dulce";
-        chocolate.carc_2="Pequeña";
-        System.out.println("Galleta chocolate:\n\n"+"Color:\t"+chocolate.color+"\n"+"Glaseado:\t"+chocolate.glaseado+"\n"+"Sabor:\t"+chocolate.sabor+"\n"+chocolate.carc_1+"\n"+chocolate.carc_2);
-        
-        //Galletas de café
-        Fabrica_galletas cafe=new Fabrica_galletas();
-        cafe.color="Cafe claro";
-        cafe.glaseado="Coffe the light";
-        cafe.sabor="Un poco amarga";
-        cafe.carc_2="pequeña";
-        System.out.println("Galleta cafe:\n\n"+"Color:\t"+cafe.color+"\n"+"Glaseado:\t"+cafe.glaseado+"\n"+"Sabor:\t"+cafe.sabor+"\n"+cafe.carc_1+"\n"+cafe.carc_2);
-               
-        //Galletas de limón
-        Fabrica_galletas limon=new Fabrica_galletas();
-        limon.color="Crema";
-        limon.glaseado="Limon dulce";
-        limon.sabor="Limon";
-        limon.carc_1="Acida";
-        limon.carc_2="Pequeña";
-        System.out.println("Galleta limon:\n\n"+"Color:\t"+limon.color+"\n"+"Glaseado:\t"+limon.glaseado+"\n"+"Sabor:\t"+limon.sabor+"\n"+limon.carc_1+"\n"+limon.carc_2);
-        
-        
-        
-        
-        
-        
+        Animal_salvaje serpiente=new Animal_salvaje();
+        serpiente.color="Verde y rojo";
+        serpiente.peso=4;
+        serpiente.tamaño=2.5;
+        serpiente.patas = "No tiene";
+        serpiente.escamas="Tiene";
+        serpiente.lengua="Lengua bifida";
+        System.out.println("Serpiente\n\n"+"Color:\t"+serpiente.color+"\n"+"Kg:\t"+serpiente.peso+"\n"+"Tamaño:\t"+serpiente.tamaño+"\n"+"Patas:\t"+serpiente.patas+"\n"+"Escamas:"+serpiente.escamas+"\n"+"Lengua:\t"+serpiente.lengua+"\n");
     }
-    
 }
