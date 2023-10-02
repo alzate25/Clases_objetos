@@ -1,0 +1,104 @@
+
+package Persona_POO;
+import javax.swing.JOptionPane;
+public class Persona {
+    String nombre,DNI,sexo;
+    int edad;
+    double peso, altura; 
+    
+    public Persona(){
+       this.nombre = nombre;
+       this.DNI    = DNI;
+       this.sexo   = sexo;
+       this.edad   = edad;
+       this.peso   = peso;
+       this.altura = altura;
+
+    } 
+    
+    
+    public void LeerDatos (){
+        nombre  = JOptionPane.showInputDialog("Escriba su nombre:  ");
+        DNI     = JOptionPane.showInputDialog("Escriba su C.C:     ");
+        sexo    = JOptionPane.showInputDialog("Escriba su sexo(H/M):    ");
+        edad    = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad:    "));
+        peso    = Double.parseDouble(JOptionPane.showInputDialog("Escriba su peso:    "));
+        altura  = Double.parseDouble(JOptionPane.showInputDialog("Escriba su altura:    "));
+        
+    }   
+    
+    public void calcularIMC(){
+        double IMC = peso/(altura*altura);
+        if(IMC<20){
+            System.out.println("\n(IMC)Estas por debajo de tu peso ideal"); 
+        }else if((IMC>=20)&&(IMC<=25)){
+            System.out.println("\n(IMC)Estas en tu peso ideal");   
+        }else if(IMC>25){
+            System.out.println("\n(IMC)Estas por encima de tu peso ideal");
+        }
+    }
+    
+    public void esMayordeEdad(){
+        if(edad>=18){
+            System.out.println("Es mayor de edad");
+        }else{
+            System.out.println("Es menor de edad");
+        }
+    }
+    
+    public void comprobarSexo(Object M){
+        if(sexo.equals(M)){
+            System.out.println( "Eres mujer.");
+        }else {
+            System.out.println( "Eres hombre.");
+        }
+    }
+    public void monstrarDatos(){
+        
+        System.out.println("Nombre:     "+nombre);
+        System.out.println("Documento:  "+DNI);
+        System.out.println("Sexo:       "+sexo);
+        System.out.println("Edad:       "+edad);
+        System.out.println("Peso:       "+peso);
+        System.out.println("Altura:     "+altura);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package Persona_POO;
+import javax.swing.JOptionPane;
+public class Main {
+    public static void main (String []args){
+        Persona p1 = new Persona();
+        p1.LeerDatos();
+        p1.monstrarDatos();
+        p1.calcularIMC();
+        p1.comprobarSexo(p1);
+        p1.esMayordeEdad();
+        
+    }
+    
+}
